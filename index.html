@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huánuco Travel — Descubre la magia de Huánuco</title>
+  <meta name="description" content="Huánuco Travel: Kotosh, Tingo María, Huánuco Pampa, la Cordillera Huayhuash y los bosques de neblina de Carpish. Descubre la magia de Huánuco, Perú." />
+  <meta name="theme-color" content="#173D32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo" aria-label="Huánuco Travel, ir al inicio">
+      HUÁNUCO<span>TRAVEL</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+      <a href="#inicio" class="is-active">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto" class="nav__cta">Contáctanos</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" data-parallax>
+        <img class="hero__img"
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Huayuash_02552.JPG?width=2400"
+             data-fallbacks="Cordillera_Huayhuash_Alpine_Circuit.jpg|Laguna_Jahuacocha.jpg"
+             data-label="Cordillera Huayhuash"
+             alt="Pared noreste de la Cordillera Huayhuash vista desde la orilla de la laguna Carhuacocha" />
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">Perú · Andes &amp; Amazonía</p>
+        <h1 class="hero__title" aria-label="Huánuco">
+          <span class="hero__word">HUÁNUCO</span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__lead reveal" style="--d:.5s">
+            Un destino extraordinario entre montañas, selvas y maravillas naturales.
+          </p>
+          <div class="hero__actions reveal" style="--d:.65s">
+            <a href="#destinos" class="btn btn--light">Explorar destinos <span class="btn__arrow">→</span></a>
+            <a href="#nosotros" class="btn btn--ghost">Descubrir Huánuco</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero__credit">Laguna Carhuacocha, Cordillera Huayhuash</p>
+      <a href="#nosotros" class="hero__scroll" aria-label="Desplazarse hacia abajo"><span></span></a>
+    </section>
+
+    <!-- ============ CINTA ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Kotosh</span><i>✦</i><span>Tingo María</span><i>✦</i><span>Huánuco Pampa</span><i>✦</i><span>Huayhuash</span><i>✦</i><span>Carpish</span><i>✦</i><span>Bella Durmiente</span><i>✦</i>
+        <span>Kotosh</span><i>✦</i><span>Tingo María</span><i>✦</i><span>Huánuco Pampa</span><i>✦</i><span>Huayhuash</span><i>✦</i><span>Carpish</span><i>✦</i><span>Bella Durmiente</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="about section" id="nosotros">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__head">
+            <p class="eyebrow reveal">Nosotros</p>
+            <h2 class="h-xl reveal">Huánuco, un destino que merece ser descubierto.</h2>
+          </div>
+          <div class="about__body">
+            <p class="lead reveal">
+              Huánuco reúne en un solo departamento las cumbres nevadas de los Andes, los valles interandinos
+              y la selva alta amazónica. Pocos lugares del Perú permiten pasar en tan poco tiempo de los glaciares
+              a los bosques tropicales.
+            </p>
+            <p class="reveal">
+              Aquí se levanta Kotosh, con su Templo de las Manos Cruzadas, uno de los testimonios más antiguos de
+              arquitectura ceremonial en los Andes. En la meseta de La Unión se extiende Huánuco Pampa, gran centro
+              administrativo inca sobre el Qhapaq Ñan. Hacia el oriente, Tingo María abre la puerta a la Amazonía con su
+              parque nacional, sus cuevas y sus cataratas.
+            </p>
+            <p class="reveal">
+              A esto se suman tradiciones vivas como la Danza de los Negritos y una cocina andina generosa, en la que
+              la pachamanca ocupa un lugar especial. Huánuco Travel nace para mostrar todo eso al mundo.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar reveal">
+            <span class="pillar__num">01</span>
+            <h3>Naturaleza</h3>
+            <p>Nevados, lagunas glaciares, bosques de neblina y selva alta en un mismo territorio.</p>
+          </div>
+          <div class="pillar reveal" style="--d:.1s">
+            <span class="pillar__num">02</span>
+            <h3>Historia</h3>
+            <p>Desde los templos precerámicos de Kotosh hasta la ciudad inca de Huánuco Pampa.</p>
+          </div>
+          <div class="pillar reveal" style="--d:.2s">
+            <span class="pillar__num">03</span>
+            <h3>Cultura</h3>
+            <p>Fiestas, danzas, música y una gastronomía que se comparte en comunidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINOS ============ -->
+    <section class="destinations section" id="destinos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Destinos · 10 lugares</p>
+          <h2 class="h-xl reveal">Explora los destinos extraordinarios.</h2>
+          <p class="section-head__text reveal">
+            Arqueología milenaria, cuevas habitadas por guácharos, cataratas, lagunas y algunas de las montañas más
+            imponentes de los Andes.
+          </p>
+        </div>
+
+        <div class="dest-grid" id="destGrid">
+          <!-- Las tarjetas se generan desde script.js (datos en DESTINOS) -->
+        </div>
+
+        <p class="note reveal">
+          * Las fotografías marcadas como <em>referenciales</em> muestran el entorno natural de la zona de Tingo María,
+          mientras se incorporan imágenes propias del lugar.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIAS ============ -->
+    <section class="experiences section" id="experiencias">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <p class="eyebrow reveal">Experiencias</p>
+          <h2 class="h-xl reveal">Cuatro formas de vivir Huánuco.</h2>
+        </div>
+      </div>
+
+      <div class="exp-list">
+        <article class="exp reveal">
+          <div class="exp__media">
+            <img loading="lazy"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Huayhuash_Alpine_Circuit.jpg?width=1600"
+                 data-fallbacks="Jirishanca_and_Rondoy.jpg|Siula_Grande_West_Face.jpg"
+                 data-label="Aventura y naturaleza"
+                 alt="Excursionistas en el circuito de la Cordillera Huayhuash" />
+          </div>
+          <div class="exp__body">
+            <span class="exp__num">01</span>
+            <h3>Aventura y naturaleza.</h3>
+            <p>Caminatas de varios días alrededor de la Cordillera Huayhuash, senderos en el Parque Nacional Tingo María y
+            los bosques de neblina de Carpish, refugio de aves y orquídeas.</p>
+            <a href="#destinos" class="link-arrow">Ver destinos →</a>
+          </div>
+        </article>
+
+        <article class="exp exp--reverse reveal">
+          <div class="exp__media">
+            <img loading="lazy"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Huánuco_Pampa_Archaeological_site_-_doorway.jpg?width=1600"
+                 data-fallbacks="Huanuco_Pampa.jpg|Templo_de_las_Manos_Cruzadas_de_Kotosh.jpg"
+                 data-label="Historia y arqueología"
+                 alt="Portada inca del complejo arqueológico de Huánuco Pampa" />
+          </div>
+          <div class="exp__body">
+            <span class="exp__num">02</span>
+            <h3>Historia y arqueología.</h3>
+            <p>Recorre Kotosh y su Templo de las Manos Cruzadas, y camina entre las portadas de piedra de Huánuco Pampa,
+            uno de los grandes centros administrativos del Tahuantinsuyo.</p>
+            <a href="#destinos" class="link-arrow">Ver destinos →</a>
+          </div>
+        </article>
+
+        <article class="exp reveal">
+          <div class="exp__media">
+            <img loading="lazy"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Laguna_Jahuacocha.jpg?width=1600"
+                 data-fallbacks="Cordillera_Huayuash_02552.JPG"
+                 data-label="Cataratas y lagunas"
+                 alt="Laguna glaciar con la Cordillera Huayhuash al fondo" />
+          </div>
+          <div class="exp__body">
+            <span class="exp__num">03</span>
+            <h3>Cataratas y lagunas.</h3>
+            <p>Lagunas glaciares al pie de los nevados de Huayhuash, y en la selva alta, las pozas cristalinas de Santa
+            Carmen, la Cueva de las Pavas y la Laguna de los Milagros.</p>
+            <a href="#destinos" class="link-arrow">Ver destinos →</a>
+          </div>
+        </article>
+
+        <article class="exp exp--reverse reveal">
+          <div class="exp__media">
+            <img loading="lazy"
+                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Danza_de_los_Negritos_davant_la_Municipalidad_de_Huánuco02.jpg?width=1600"
+                 data-fallbacks="Pachamanca_in_Peru.jpg|Catedral_de_Huánuco_des_de_la_plaza_de_Armas.jpg"
+                 data-label="Cultura y gastronomía"
+                 alt="Danza de los Negritos frente a la Municipalidad de Huánuco" />
+          </div>
+          <div class="exp__body">
+            <span class="exp__num">04</span>
+            <h3>Cultura y gastronomía.</h3>
+            <p>Vive la Danza de los Negritos en la Plaza de Armas de Huánuco, cruza el histórico Puente Calicanto y
+            comparte una pachamanca cocida bajo tierra con piedras calientes.</p>
+            <a href="#galeria" class="link-arrow">Ver galería →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ DESTACADO ============ -->
+    <section class="feature section">
+      <div class="container feature__grid">
+        <div class="feature__card reveal">
+          <p class="eyebrow eyebrow--light">Destino destacado</p>
+          <h2>Cordillera Huayhuash.</h2>
+          <p>Compartida por Huánuco, Áncash y Lima, alberga al Yerupajá, la segunda cumbre más alta del Perú,
+          y lagunas glaciares como Carhuacocha. Su circuito de trekking es considerado uno de los más bellos de los Andes.</p>
+          <button class="btn btn--light" data-open-dest="huayhuash">Descubrir destino <span class="btn__arrow">→</span></button>
+        </div>
+        <div class="feature__media reveal" style="--d:.15s">
+          <img loading="lazy"
+               src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerupaja_Grande.jpg?width=1400"
+               data-fallbacks="Siula_Grande_West_Face.jpg|Cordillera_Huayhuash_Alpine_Circuit.jpg"
+               data-label="Yerupajá"
+               alt="Nevado Yerupajá, la cumbre más alta de la Cordillera Huayhuash" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery section" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Galería</p>
+          <h2 class="h-xl reveal">Paisajes que se quedan contigo.</h2>
+        </div>
+
+        <div class="mosaic" id="mosaic">
+          <!-- Se genera desde script.js (datos en GALERIA) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact section" id="contacto">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow eyebrow--light reveal">Contáctanos</p>
+          <h2 class="h-xl reveal">Planifica tu viaje a Huánuco.</h2>
+          <p class="reveal">Escríbenos y te ayudaremos a armar una ruta a tu medida por los Andes y la selva de Huánuco.</p>
+
+          <dl class="info-list reveal">
+            <div>
+              <dt>Cómo llegar</dt>
+              <dd>Huánuco cuenta con aeropuerto propio y conexión por la Carretera Central, que continúa hacia Tingo María.</dd>
+            </div>
+            <div>
+              <dt>Clima</dt>
+              <dd>En los Andes, los meses de mayo a septiembre suelen ser más secos y adecuados para el trekking.</dd>
+            </div>
+            <div>
+              <dt>Recomendación</dt>
+              <dd>Para la Cordillera Huayhuash y Huánuco Pampa, aclimátate a la altura antes de caminar.</dd>
+            </div>
+          </dl>
+
+          <div class="socials reveal">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre" required minlength="2" />
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required />
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="interest">Me interesa</label>
+            <select id="interest" name="interest">
+              <option>Aventura y naturaleza</option>
+              <option>Historia y arqueología</option>
+              <option>Cataratas y lagunas</option>
+              <option>Cultura y gastronomía</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu viaje: fechas, número de personas, lugares que quieres conocer…" required minlength="10"></textarea>
+            <small class="field__error" aria-live="polite"></small>
+          </div>
+          <button type="submit" class="btn btn--clay btn--block">Enviar mensaje <span class="btn__arrow">→</span></button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="#inicio" class="footer__logo">HUÁNUCO<span>TRAVEL</span></a>
+          <p class="footer__slogan">Descubre la magia de Huánuco.</p>
+        </div>
+        <a href="#inicio" class="btn btn--ghost footer__up">Volver arriba ↑</a>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Navegación</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#destinos">Destinos</a>
+          <a href="#experiencias">Experiencias</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contáctanos</a>
+        </div>
+        <div>
+          <h4>Lugares turísticos</h4>
+          <button data-open-dest="kotosh">Kotosh</button>
+          <button data-open-dest="lechuzas">Cueva de las Lechuzas</button>
+          <button data-open-dest="bella-durmiente">Bella Durmiente</button>
+          <button data-open-dest="huanuco-pampa">Huánuco Pampa</button>
+          <button data-open-dest="huayhuash">Cordillera Huayhuash</button>
+          <button data-open-dest="carpish">Bosque de Carpish</button>
+        </div>
+        <div>
+          <h4>Redes sociales</h4>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer__word" aria-hidden="true">HUÁNUCO</div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Huánuco Travel. Todos los derechos reservados.</p>
+        <p>Fotografías: Wikimedia Commons, bajo sus respectivas licencias libres.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL DESTINO ============ -->
+  <div class="modal" id="destModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__panel">
+      <button class="modal__close" data-close aria-label="Cerrar">✕</button>
+      <div class="modal__media"><img id="modalImg" alt="" /></div>
+      <div class="modal__body">
+        <p class="eyebrow" id="modalLoc"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <ul class="modal__facts" id="modalFacts"></ul>
+        <div class="modal__actions">
+          <a class="btn btn--dark" id="modalMap" target="_blank" rel="noopener">Ver en el mapa ↗</a>
+          <a class="btn btn--outline" href="#contacto" data-close>Planificar visita</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada" hidden>
+    <button class="lightbox__close" data-lb-close aria-label="Cerrar">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="Anterior">←</button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="Siguiente">→</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
