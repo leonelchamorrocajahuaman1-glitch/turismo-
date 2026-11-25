@@ -7,13 +7,11 @@
   document.documentElement.classList.remove("no-js");
 
   /* ---------------------------------------------------------
-     Fotografías: Wikimedia Commons (licencias libres).
-     Special:FilePath redirige al archivo real; ?width pide
-     una versión redimensionada.
+     Fotografías locales (carpeta img/). Origen y licencias:
+     Wikimedia Commons — ver CREDITOS.md
      --------------------------------------------------------- */
-  var COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
-  function photo(file, width) {
-    return COMMONS + encodeURIComponent(file).replace(/%2C/g, ",") + "?width=" + (width || 1600);
+  function photo(slug) {
+    return "img/" + slug + ".jpg";
   }
 
   /* ---------------------------------------------------------
@@ -28,9 +26,8 @@
       ubicacion: "A unos 5 km de la ciudad de Huánuco",
       tag: "Arqueología",
       fotos: [
-        "Templo_de_las_Manos_Cruzadas,_Kotosh,_Huánuco.jpg",
-        "Templo_de_las_Manos_Cruzadas_de_Kotosh.jpg",
-        "Ruines_des_del_Templo_de_las_Manos_Cruzadas_de_Kotosh.jpg"
+        "kotosh",
+        "kotosh-templo"
       ],
       desc: "Uno de los sitios arqueológicos más antiguos de los Andes peruanos. Su célebre Templo de las Manos Cruzadas debe su nombre a un relieve de barro con dos antebrazos cruzados, símbolo del patrimonio de Huánuco.",
       datos: [
@@ -46,9 +43,8 @@
       ubicacion: "Parque Nacional Tingo María, Leoncio Prado",
       tag: "Cuevas",
       fotos: [
-        "Entrada_a_la_zona_turística_de_la_Cueva_de_las_Lechuzas_del_Parque_Nacional_Tingo_María.jpg",
-        "Pont_penjant_sobre_el_riu_Monzon_a_l'entrada_de_l'entorn_turístic_de_la_Cueva_de_las_Lechuzas.jpg",
-        "Riu_Monzon_a_la_zona_del_Centro_Turístico_de_la_Cueva_de_las_Lechuzas_al_Parc_Nacional_de_Tingo_María02.jpg"
+        "lechuzas",
+        "puente-monzon"
       ],
       desc: "Gran caverna de piedra caliza al pie de la Bella Durmiente. En su interior viven colonias de guácharos, aves nocturnas que habitan en la oscuridad, entre estalactitas y estalagmitas.",
       datos: [
@@ -64,9 +60,7 @@
       ubicacion: "Tingo María, Leoncio Prado",
       tag: "Montaña",
       fotos: [
-        "Muntanya_la_Bella_Durmiente_entre_Tingo_María_i_el_Parc_Nacional_de_Tingo_María.jpg",
-        "Bella_Durmiente_TM-Peru-1.jpg",
-        "Mi_bella_durmiente,_Tingo_María,_Huánuco,_Perú.jpg"
+        "bella-durmiente"
       ],
       desc: "La cadena de montañas cubierta de selva cuya silueta recuerda a una mujer recostada. Es el emblema de Tingo María y se contempla desde la ciudad y sus miradores.",
       datos: [
@@ -82,9 +76,8 @@
       ubicacion: "Provincia de Leoncio Prado",
       tag: "Selva alta",
       fotos: [
-        "Pont_penjant_sobre_el_riu_Monzon_a_l'entrada_de_l'entorn_turístic_de_la_Cueva_de_las_Lechuzas.jpg",
-        "Riu_Monzon_a_la_zona_del_Centro_Turístico_de_la_Cueva_de_las_Lechuzas_al_Parc_Nacional_de_Tingo_María02.jpg",
-        "Carretera_18A_a_Tingo_María_des_del_Mirador_de_la_Cruz03.jpg"
+        "puente-monzon",
+        "rio-monzon"
       ],
       desc: "Creado en 1965, es uno de los parques nacionales más antiguos del Perú. Protege la Bella Durmiente, la Cueva de las Lechuzas y los bosques de selva alta que bordea el río Monzón.",
       datos: [
@@ -101,8 +94,8 @@
       tag: "Catarata",
       ref: true,
       fotos: [
-        "Riu_Monzon_a_la_zona_del_Centro_Turístico_de_la_Cueva_de_las_Lechuzas_al_Parc_Nacional_de_Tingo_María02.jpg",
-        "Carretera_18A_a_Tingo_María_des_del_Mirador_de_la_Cruz03.jpg"
+        "paisaje-lechuzas",
+        "rio-monzon"
       ],
       desc: "Una caída de agua rodeada de vegetación, en la localidad de Santa Carmen. Antes de la catarata principal se encuentra La Piscina, una poza natural ideal para refrescarse.",
       datos: [
@@ -119,8 +112,8 @@
       tag: "Laguna",
       ref: true,
       fotos: [
-        "Carretera_18A_a_Tingo_María_des_del_Mirador_de_la_Cruz03.jpg",
-        "Riu_Monzon_a_la_zona_del_Centro_Turístico_de_la_Cueva_de_las_Lechuzas_al_Parc_Nacional_de_Tingo_María02.jpg"
+        "tingo-huallaga",
+        "rio-monzon"
       ],
       desc: "Una laguna rodeada de selva en el caserío de Los Milagros. Forma parte del corredor turístico de Tingo María junto a la Catarata Santa Carmen y el Mirador de la Cruz.",
       datos: [
@@ -137,8 +130,8 @@
       tag: "Balneario",
       ref: true,
       fotos: [
-        "Pont_penjant_sobre_el_riu_Monzon_a_l'entrada_de_l'entorn_turístic_de_la_Cueva_de_las_Lechuzas.jpg",
-        "Riu_Monzon_a_la_zona_del_Centro_Turístico_de_la_Cueva_de_las_Lechuzas_al_Parc_Nacional_de_Tingo_María02.jpg"
+        "rio-monzon",
+        "paisaje-lechuzas"
       ],
       desc: "Un balneario natural en la selva alta, donde el agua ha tallado una quebrada entre rocas y vegetación. Sus pozas de aguas cristalinas son perfectas para nadar.",
       datos: [
@@ -155,8 +148,8 @@
       ubicacion: "La Unión, provincia de Dos de Mayo",
       tag: "Inca",
       fotos: [
-        "Huánuco_Pampa_Archaeological_site_-_doorway.jpg",
-        "Huanuco_Pampa.jpg"
+        "huanuco-pampa",
+        "ushnu"
       ],
       desc: "Uno de los centros administrativos incas más grandes del Tahuantinsuyo, construido sobre una amplia meseta a unos 3 600 m de altitud y atravesado por el Qhapaq Ñan, el camino inca.",
       datos: [
@@ -172,9 +165,8 @@
       ubicacion: "Límite de Huánuco, Áncash y Lima",
       tag: "Nevados",
       fotos: [
-        "Cordillera_Huayuash_02552.JPG",
-        "Cordillera_Huayhuash_Alpine_Circuit.jpg",
-        "Jirishanca_and_Rondoy.jpg"
+        "huayhuash-circuito",
+        "hero-carhuacocha"
       ],
       desc: "Una de las cordilleras más espectaculares del mundo. Allí se alza el Yerupajá, la segunda cumbre más alta del Perú, rodeado de picos como Siula Grande y Jirishanca y de lagunas glaciares como Carhuacocha.",
       datos: [
@@ -189,10 +181,9 @@
       nombre: "Bosque de Neblina de Carpish",
       ubicacion: "Entre Huánuco y Tingo María",
       tag: "Bosque",
-      ref: true,
+      nota: "En la foto: hemispingo de gorro negro, ave fotografiada en Carpish.",
       fotos: [
-        "Carretera_18A_a_Tingo_María_des_del_Mirador_de_la_Cruz03.jpg",
-        "Muntanya_la_Bella_Durmiente_entre_Tingo_María_i_el_Parc_Nacional_de_Tingo_María.jpg"
+        "carpish-ave"
       ],
       desc: "Bosque montano cubierto de neblina, protegido desde 2020 como la primera Área de Conservación Regional de Huánuco. Es refugio de aves y orquídeas endémicas, junto a la carretera hacia Tingo María.",
       datos: [
@@ -205,20 +196,20 @@
   ];
 
   var GALERIA = [
-    { f: "Cordillera_Huayuash_02552.JPG", cap: "Laguna Carhuacocha · Cordillera Huayhuash", cls: "tile--big" },
-    { f: "Yerupaja_Grande.jpg", cap: "Nevado Yerupajá", cls: "tile--tall" },
-    { f: "Templo_de_las_Manos_Cruzadas,_Kotosh,_Huánuco.jpg", cap: "Templo de las Manos Cruzadas · Kotosh" },
-    { f: "Huánuco_Pampa_Archaeological_site_-_doorway.jpg", cap: "Portadas incas · Huánuco Pampa" },
-    { f: "Muntanya_la_Bella_Durmiente_entre_Tingo_María_i_el_Parc_Nacional_de_Tingo_María.jpg", cap: "La Bella Durmiente · Tingo María", cls: "tile--wide" },
-    { f: "Pont_penjant_sobre_el_riu_Monzon_a_l'entrada_de_l'entorn_turístic_de_la_Cueva_de_las_Lechuzas.jpg", cap: "Río Monzón · Cueva de las Lechuzas" },
-    { f: "Puente_Calicanto_Huánuco.jpg", cap: "Puente Calicanto · Huánuco" },
-    { f: "Siula_Grande_West_Face.jpg", cap: "Siula Grande · Huayhuash", cls: "tile--tall" },
-    { f: "Danza_de_los_Negritos_davant_la_Municipalidad_de_Huánuco02.jpg", cap: "Danza de los Negritos · Huánuco", cls: "tile--wide" },
-    { f: "Catedral_de_Huánuco_des_de_la_plaza_de_Armas.jpg", cap: "Catedral de Huánuco" },
-    { f: "Pachamanca_in_Peru.jpg", cap: "Pachamanca" },
-    { f: "Cordillera_Huayhuash_Alpine_Circuit.jpg", cap: "Circuito Huayhuash", cls: "tile--wide" },
-    { f: "Laguna_Jahuacocha.jpg", cap: "Laguna Jahuacocha · Huayhuash", cls: "tile--wide" },
-    { f: "Carretera_18A_a_Tingo_María_des_del_Mirador_de_la_Cruz03.jpg", cap: "Vista desde el Mirador de la Cruz · Tingo María", cls: "tile--wide" }
+    { f: "hero-carhuacocha", cap: "Laguna Carhuacocha · Cordillera Huayhuash", cls: "tile--big" },
+    { f: "yerupaja", cap: "Nevado Yerupajá", cls: "tile--tall" },
+    { f: "kotosh", cap: "Kotosh · Huánuco" },
+    { f: "huanuco-pampa", cap: "Portada inca · Huánuco Pampa" },
+    { f: "huayhuash-atardecer", cap: "Atardecer en la Cordillera Huayhuash", cls: "tile--wide" },
+    { f: "puente-monzon", cap: "Río Monzón · Cueva de las Lechuzas" },
+    { f: "calicanto", cap: "Puente Calicanto · Huánuco" },
+    { f: "negritos", cap: "Danza de los Negritos · Huánuco", cls: "tile--tall" },
+    { f: "tingo-huallaga", cap: "Tingo María y el río Huallaga", cls: "tile--wide" },
+    { f: "kotosh-templo", cap: "Templo de las Manos Cruzadas · Kotosh" },
+    { f: "siula", cap: "Siula Grande · Huayhuash" },
+    { f: "huanuco-pampa-vista", cap: "Muros incas · Huánuco Pampa", cls: "tile--wide" },
+    { f: "jahuacocha", cap: "Laguna Jahuacocha · Huayhuash", cls: "tile--wide" },
+    { f: "paisaje-lechuzas", cap: "Selva del Parque Nacional Tingo María", cls: "tile--wide" }
   ];
 
   /* ---------------------------------------------------------
@@ -250,7 +241,7 @@
   // Imágenes declaradas en el HTML
   document.querySelectorAll("img[data-fallbacks]").forEach(function (img) {
     var list = img.getAttribute("data-fallbacks").split("|").filter(Boolean);
-    attachFallback(img, list, img.classList.contains("hero__img") ? 2400 : 1600);
+    attachFallback(img, list);
   });
 
   /* ---------------------------------------------------------
@@ -274,6 +265,7 @@
         '<div class="dest__foot">' +
           '<button class="btn btn--light" data-open-dest="' + d.id + '">Descubrir destino <span class="btn__arrow">→</span></button>' +
           (d.ref ? '<span class="dest__ref">Imagen referencial*</span>' : "") +
+          (d.nota ? '<span class="dest__ref">' + d.nota + "</span>" : "") +
         "</div>" +
       "</div>";
     var img = card.querySelector("img");
@@ -447,7 +439,7 @@
     mImg.alt = d.nombre;
     mTitle.textContent = d.nombre + ".";
     mLoc.textContent = d.ubicacion;
-    mDesc.textContent = d.desc + (d.ref ? " (La fotografía es referencial del entorno de Tingo María.)" : "");
+    mDesc.textContent = d.desc + (d.ref ? " (La fotografía es referencial del entorno de Tingo María.)" : "") + (d.nota ? " " + d.nota : "");
     mFacts.innerHTML = "";
     d.datos.forEach(function (t) {
       var li = document.createElement("li");
